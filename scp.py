@@ -431,7 +431,7 @@ class SCPClient(object):
             if not msg:  # chan closed while receiving
                 break
                 
-             if msg[-1:] == b'\n':
+            if msg[-1:] == b'\n':
                 msg = msg[:-1]
             else:
                 continue
